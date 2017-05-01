@@ -12,11 +12,12 @@ body {
 }
 
 .container {
-  background-color:green;
+  background-color:white;
   padding:0px;
 }
 
-.row {
+hr {
+  border-color: black;
 }
 
 
@@ -46,7 +47,20 @@ body {
 .header__row {
   border-bottom: 30px solid black;
   padding-bottom: 30px;
+  border: 1px solid red;
 }
+
+.header__right {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.header__logo {
+  display: block;
+  margin: 60px auto 0px;
+}
+
 .header__right {
   text-align: right;
   font-family: 'Lato', serif !important;
@@ -104,12 +118,22 @@ body {
 
 /* Responsive Styling */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .header__logo {
     margin: 20px auto -20px;
   }
 
   .header__mainline, .header__subline {
+    text-align: center;
+  }
+
+  .content__project__header__text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .content__project__header__text {
     text-align: center;
   }
 }
