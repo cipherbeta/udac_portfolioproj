@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100,400,500');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Baloo');
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
 
 
 body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Lato', sans-serif;
+
 }
 
 .container {
@@ -14,8 +17,8 @@ body {
 }
 
 .row {
-
 }
+
 
 /* General Use Custom Styles */
 .no-padding {
@@ -51,13 +54,18 @@ body {
   text-transform: uppercase;
 }
 
-.header__mainlne {
+.header__mainline {
   text-align: right;
-
+  margin-top: 40px;
+  font-size: 6em;
+  font-weight: 300;
 }
 
 .header__subline {
   text-align: right;
+  margin-top: -10px;
+  font-size: 2em;
+  font-weight: 500;
 }
 
 
@@ -68,4 +76,40 @@ body {
 .content__projectImg {
   width: 100%;
   height: auto;
+}
+
+
+
+/* 'Projects' Styling */
+.content__project__header__text {
+  font-size: 4em;
+  margin: 25px 0px;
+}
+
+.content__project {
+
+}
+
+.content__project__title {
+  font-size: 4em;
+}
+
+.content__project__subtitle {
+  margin: 10px 0px 30px;
+}
+
+
+
+
+
+/* Responsive Styling */
+
+@media screen and (max-width: 576px) {
+  .header__logo {
+    margin: 20px auto -20px;
+  }
+
+  .header__mainline, .header__subline {
+    text-align: center;
+  }
 }
