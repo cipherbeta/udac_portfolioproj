@@ -1,0 +1,20 @@
+{
+  "Isaac Doud": "Udacity Portfolio Development Project",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-imagemagick": "^0.1.5",
+    "grunt-mkdir": "^1.0.0",
+    "grunt-responsive-images": "^1.10.1",
+    "imagemagick": "^0.1.3"
+  },
+  "dependencies": {
+    "grunt-responsive-images": "^0.1.6"
+  }
+}
