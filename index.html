@@ -18,52 +18,85 @@
 
 <body>
   <div class="container">
-
+    <!-- HEADER SECTION -->
     <header>
       <row class="header__row">
-        <div class="col-xs-12 col-sm-3 header__left">
-          <img class="img-responsive header__logo" src="img/arch_logo.svg" />
+        <div class="col-xs-12 col-sm-2 header__left">
+          <img class="img-responsive header__logo" src="img/udacity.svg" />
         </div>
-        <div class="col-xs-12 col-sm-9 header__right">
-          <h1 class="header__mainline">ISAAC DOUD</h1>
+        <div class="col-xs-12 col-sm-10 header__right">
+          <h1 class="header__mainline">JANE DOETTE</h1>
           <h2 class="header__subline">FRONT-END NINJA</h2>
         </div>
       </row>
     </header>
 
+    <!-- FOR SOME REASON, OVERLY COMPLEX HR \o/ -->
     <row class="divider"><div class="col-xs-12"><hr /></div></row>
 
+    <!-- HERO IMAGE -->
     <row class="hero__row">
       <div class="col-lg-12 hero__container">
-        <img class="img-responsive hero__image" src="http://lorempixel.com/1920/800" />
+        <picture>
+          <source media="(max-width:575px)" srcset="img/hero_falcon-360_360w_1x.jpg 1x, img/hero_falcon-640_360w_2x.jpg 2x">
+          <source media="(min-width:576px) and (max-width:767px;)" srcset="img/hero_falcon-640_640w_1x.jpg 1x, img/hero_falcon-960_640w_2x.jpg 2x">
+          <source media="(min-width:768px) and (max-width:1199px)" srcset="img/hero_falcon-960_960w_1x.jpg 1x, img/hero_falcon-1280_960w_2x.jpg 2x">
+          <source media="(min-width:1200px)" srcset="img/hero_falcon-1280_1280w_1x.jpg 1x, img/hero_falcon-1600_1280w_2x.jpg 2x">
+          <img class="img-responsive hero__image" src="img/hero_falcon-1280_960w_2x.jpg" alt="A falcon. Photo credit to Giovanni Calia, courtesy of Unsplash.">
+        </picture>
       </div>
     </row>
 
-
-
+    <!-- FEATURED CONTENT SECTION -->
       <row class-"content__row">
+
+        <!-- CONTENT HEADER -->
         <div class="col-lg-12 content__header">
           <h2 class="content__project__header__text color__3">Featured Projects</h2>
         </div>
+
+        <!-- PROJECT 1 -->
         <div class="col-lg-4 col-md-6 col-sm-12 content__project">
-          <img src="http://lorempixel.com/400/200" alt="" class="img-responsive content__projectImg">
-          <h3 class="content__project__title">PROJECT</h3>
+          <picture>
+            <source media="(max-width:575px)" srcset="img/ex1-360_360w_1x.jpg 1x, img/ex1-640_360w_2x.jpg 2x">
+            <source media="(min-width:576px) and (max-width:767px;)" srcset="img/ex1-640_640w_1x.jpg 1x, img/ex1-960_640w_2x.jpg 2x">
+            <source media="(min-width:768px) and (max-width:1199px)" srcset="img/ex1-960_960w_1x.jpg 1x, img/ex1-1280_960w_2x.jpg 2x">
+            <source media="(min-width:1200px)" srcset="img/ex1-1280_1280w_1x.jpg 1x, img/ex1-1600_1280w_2x.jpg 2x">
+            <img class="img-responsive content__project__img" src="img/ex1-960_640w_2x.jpg" alt="A pair of headphones resting on a table. Courtesy of Unsplash.">
+          </picture>
+          <h3 class="content__project__title color_2">APPIFY</h3>
           <p class="content__project__subtitle">
-            This is the link to the project.
+            <a href="https://github.com/udacity/Appify/">https://github.com/udacity/Appify/</a>
           </p>
         </div>
+
+        <!-- PROJECT 2 -->
         <div class="col-lg-4 col-md-6 col-sm-12 content__project">
-          <img src="http://lorempixel.com/400/200" alt="" class="img-responsive content__projectImg">
-          <h3 class="content__project__title">PROJECT</h3>
+          <picture>
+            <source media="(max-width:575px)" srcset="img/ex2-360_360w_1x.jpg 1x, img/ex2-640_360w_2x.jpg 2x">
+            <source media="(min-width:576px) and (max-width:767px;)" srcset="img/ex2-640_640w_1x.jpg 1x, img/ex2-960_640w_2x.jpg 2x">
+            <source media="(min-width:768px) and (max-width:1199px)" srcset="img/ex2-960_960w_1x.jpg 1x, img/ex2-1280_960w_2x.jpg 2x">
+            <source media="(min-width:1200px)" srcset="img/ex2-1280_1280w_1x.jpg 1x, img/ex2-1600_1280w_2x.jpg 2x">
+            <img class="img-responsive content__project__img" src="img/ex2-960_640w_2x.jpg" alt="A pair of headphones resting on a set of magazines on a bookshelf. Courtesy of Unsplash.">
+          </picture>
+          <h3 class="content__project__title color_2">SUNFLOWER</h3>
           <p class="content__project__subtitle">
-            This is the link to the project.
+            <a href="https://github.com/udacity/Sunflower">https://github.com/udacity/Sunflower</a>
           </p>
         </div>
+
+        <!-- PROJECT 3 -->
         <div class="col-lg-4 col-md-6 col-sm-12 content__project">
-          <img src="http://lorempixel.com/400/200" alt="" class="img-responsive content__projectImg">
-          <h3 class="content__project__title">PROJECT</h3>
+          <picture>
+            <source media="(max-width:575px)" srcset="img/ex3-360_360w_1x.jpg 1x, img/ex3-640_360w_2x.jpg 2x">
+            <source media="(min-width:576px) and (max-width:767px;)" srcset="img/ex3-640_640w_1x.jpg 1x, img/ex3-960_640w_2x.jpg 2x">
+            <source media="(min-width:768px) and (max-width:1199px)" srcset="img/ex3-960_960w_1x.jpg 1x, img/ex3-1280_960w_2x.jpg 2x">
+            <source media="(min-width:1200px)" srcset="img/ex3-1280_1280w_1x.jpg 1x, img/ex3-1600_1280w_2x.jpg 2x">
+            <img class="img-responsive content__project__img" src="img/ex3-960_640w_2x.jpg" alt="A pair of headphones held up by a hand. Courtesy of Unsplash.">
+          </picture>
+          <h3 class="content__project__title color_2">BOKEH</h3>
           <p class="content__project__subtitle">
-            This is the link to the project.
+            <a href="https://github.com/udacity/Bokeh/">https://github.com/udacity/Bokeh/</a>
           </p>
         </div>
       </row>

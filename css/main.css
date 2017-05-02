@@ -1,27 +1,43 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,500');
-@import url('https://fonts.googleapis.com/css?family=Baloo');
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400,500');
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
+/* Optimizing legibility. Fake-ish antialiasing for those thin fonts. */
+p, a, h1, h2, h3, h4, h5, h6 {
+  text-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 
-body {
+/* General Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
 
+a {
+  color: #2D3C49;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+body {
+  background-color: #f7f7f7;
 }
 
 .container {
   background-color:white;
   padding:0px;
+  box-shadow: 0px 0px 40px rgba(0,0,0,.4), 0px 0px 20px rgba(0,0,0,.8);
 }
 
 hr {
-  border-color: black;
+  border-color: #7D97AD;
+  border-width: 5px;
+  border-radius: 2px;
 }
 
-
-/* General Use Custom Styles */
+/* Plug and Play Styles for Testing */
 .no-padding {
   padding: 0px;
 }
@@ -47,7 +63,6 @@ hr {
 .header__row {
   border-bottom: 30px solid black;
   padding-bottom: 30px;
-  border: 1px solid red;
 }
 
 .header__right {
@@ -58,7 +73,9 @@ hr {
 
 .header__logo {
   display: block;
-  margin: 60px auto 0px;
+  max-width: 100px;
+  margin: 40px auto 0px;
+  float: left;
 }
 
 .header__right {
@@ -70,54 +87,53 @@ hr {
 
 .header__mainline {
   text-align: right;
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 6em;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 .header__subline {
   text-align: right;
   margin-top: -10px;
-  font-size: 2em;
-  font-weight: 500;
+  font-size: 1.8em;
+  font-weight: 100;
 }
 
+/* Hero Styling */
+.hero__image {
+  width: 100%;
+}
+
+
+/* 'Projects' Styling */
 
 .content__project {
   text-align: center;
 }
 
-.content__projectImg {
-  width: 100%;
-  height: auto;
-}
-
-
-
-/* 'Projects' Styling */
 .content__project__header__text {
-  font-size: 4em;
+  font-size: 3em;
+  font-weight: 400;
   margin: 25px 0px;
 }
 
-.content__project {
-
-}
-
 .content__project__title {
-  font-size: 4em;
+  font-size: 3em;
+  font-weight: 400;
 }
 
 .content__project__subtitle {
   margin: 10px 0px 30px;
 }
 
-
-
-
+.content__project__img {
+  width: 100%;
+  height: auto;
+}
 
 /* Responsive Styling */
 
+/* BELOW 768 PX, DO THIS */
 @media screen and (max-width: 768px) {
   .header__logo {
     margin: 20px auto -20px;
@@ -130,8 +146,13 @@ hr {
   .content__project__header__text {
     text-align: center;
   }
+
+  .header__logo {
+    float: none;
+  }
 }
 
+/* BELOW 991PX, DO THIS */
 @media screen and (max-width: 991px) {
   .content__project__header__text {
     text-align: center;
