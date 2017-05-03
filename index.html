@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="This is Isaac Doud's submission to the Udacity Front End Web Development Nanodegree.">
+  <meta name="keywords" content="Portfolio,Udacity,Submission,Projects,HTML,Front,End,Web,Development">
+  <meta name="author" content="Isaac Doud">
   <title>Portfolio Project - Udacity</title>
 
   <!-- Importing Bootstrap CSS -->
@@ -12,27 +15,27 @@
   <!-- Importing Bootstrap JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- Importing Main CSS -->
-  <link rel="stylesheet" href="css/main.css" />
-
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <div class="container">
     <!-- HEADER SECTION -->
-    <header>
-      <row class="header__row">
+    <row class="header__row">
+      <header>
         <div class="col-xs-12 col-sm-2 header__left">
-          <img class="img-responsive header__logo" src="img/udacity.svg" />
+          <img class="img-responsive header__logo" src="img/udacity.svg" alt="The Udacity Logo.">
         </div>
         <div class="col-xs-12 col-sm-10 header__right">
-          <h1 class="header__mainline">JANE DOETTE</h1>
-          <h2 class="header__subline">FRONT-END NINJA</h2>
+          <h1 class="header__mainline">ISAAC DOUD</h1>
+          <h2 class="header__subline">NEARSIGHTED  NINJA</h2>
         </div>
-      </row>
-    </header>
+      </header>
+    </row>
+
 
     <!-- FOR SOME REASON, OVERLY COMPLEX HR \o/ -->
-    <row class="divider"><div class="col-xs-12"><hr /></div></row>
+    <row class="divider"><div class="col-xs-12"><hr></div></row>
 
     <!-- HERO IMAGE -->
     <row class="hero__row">
@@ -48,7 +51,7 @@
     </row>
 
     <!-- FEATURED CONTENT SECTION -->
-      <row class-"content__row">
+      <row class="content__row">
 
         <!-- CONTENT HEADER -->
         <div class="col-lg-12 content__header">
@@ -56,51 +59,56 @@
         </div>
 
         <!-- PROJECT 1 -->
-        <div class="col-lg-4 col-md-6 col-sm-12 content__project">
-          <picture>
-            <source media="(max-width:575px)" srcset="img/ex1-360_360w_1x.jpg 1x, img/ex1-640_360w_2x.jpg 2x">
-            <source media="(min-width:576px) and (max-width:767px;)" srcset="img/ex1-640_640w_1x.jpg 1x, img/ex1-960_640w_2x.jpg 2x">
-            <source media="(min-width:768px) and (max-width:1199px)" srcset="img/ex1-960_960w_1x.jpg 1x, img/ex1-1280_960w_2x.jpg 2x">
-            <source media="(min-width:1200px)" srcset="img/ex1-1280_1280w_1x.jpg 1x, img/ex1-1600_1280w_2x.jpg 2x">
-            <img class="img-responsive content__project__img" src="img/ex1-960_640w_2x.jpg" alt="A pair of headphones resting on a table. Courtesy of Unsplash.">
-          </picture>
-          <h3 class="content__project__title color_2">APPIFY</h3>
-          <p class="content__project__subtitle">
-            <a href="https://github.com/udacity/Appify/">https://github.com/udacity/Appify/</a>
-          </p>
-        </div>
+        <article id="Project 1">
+          <div class="col-lg-4 col-md-6 col-sm-12 content__project">
+            <picture>
+              <source media="(max-width:575px)" srcset="img/ex1-360_360w_1x.jpg 1x, img/ex1-640_360w_2x.jpg 2x">
+              <source media="(min-width:576px) and (max-width:767px;)" srcset="img/ex1-640_640w_1x.jpg 1x, img/ex1-960_640w_2x.jpg 2x">
+              <source media="(min-width:768px) and (max-width:1199px)" srcset="img/ex1-960_960w_1x.jpg 1x, img/ex1-1280_960w_2x.jpg 2x">
+              <source media="(min-width:1200px)" srcset="img/ex1-1280_1280w_1x.jpg 1x, img/ex1-1600_1280w_2x.jpg 2x">
+              <img class="img-responsive content__project__img" src="img/ex1-960_640w_2x.jpg" alt="A pair of headphones resting on a table. Courtesy of Unsplash.">
+            </picture>
+            <h3 class="content__project__title color_2">APPIFY</h3>
+            <p class="content__project__subtitle">
+              <a href="https://github.com/udacity/Appify/">https://github.com/udacity/Appify/</a>
+            </p>
+          </div>
+        </article>
 
         <!-- PROJECT 2 -->
-        <div class="col-lg-4 col-md-6 col-sm-12 content__project">
-          <picture>
-            <source media="(max-width:575px)" srcset="img/ex2-360_360w_1x.jpg 1x, img/ex2-640_360w_2x.jpg 2x">
-            <source media="(min-width:576px) and (max-width:767px;)" srcset="img/ex2-640_640w_1x.jpg 1x, img/ex2-960_640w_2x.jpg 2x">
-            <source media="(min-width:768px) and (max-width:1199px)" srcset="img/ex2-960_960w_1x.jpg 1x, img/ex2-1280_960w_2x.jpg 2x">
-            <source media="(min-width:1200px)" srcset="img/ex2-1280_1280w_1x.jpg 1x, img/ex2-1600_1280w_2x.jpg 2x">
-            <img class="img-responsive content__project__img" src="img/ex2-960_640w_2x.jpg" alt="A pair of headphones resting on a set of magazines on a bookshelf. Courtesy of Unsplash.">
-          </picture>
-          <h3 class="content__project__title color_2">SUNFLOWER</h3>
-          <p class="content__project__subtitle">
-            <a href="https://github.com/udacity/Sunflower">https://github.com/udacity/Sunflower</a>
-          </p>
-        </div>
+        <article id="Project 2">
+          <div class="col-lg-4 col-md-6 col-sm-12 content__project">
+            <picture>
+              <source media="(max-width:575px)" srcset="img/ex2-360_360w_1x.jpg 1x, img/ex2-640_360w_2x.jpg 2x">
+              <source media="(min-width:576px) and (max-width:767px;)" srcset="img/ex2-640_640w_1x.jpg 1x, img/ex2-960_640w_2x.jpg 2x">
+              <source media="(min-width:768px) and (max-width:1199px)" srcset="img/ex2-960_960w_1x.jpg 1x, img/ex2-1280_960w_2x.jpg 2x">
+              <source media="(min-width:1200px)" srcset="img/ex2-1280_1280w_1x.jpg 1x, img/ex2-1600_1280w_2x.jpg 2x">
+              <img class="img-responsive content__project__img" src="img/ex2-960_640w_2x.jpg" alt="A pair of headphones resting on a set of magazines on a bookshelf. Courtesy of Unsplash.">
+            </picture>
+            <h3 class="content__project__title color_2">SUNFLOWER</h3>
+            <p class="content__project__subtitle">
+              <a href="https://github.com/udacity/Sunflower">https://github.com/udacity/Sunflower</a>
+            </p>
+          </div>
+        </article>
 
         <!-- PROJECT 3 -->
-        <div class="col-lg-4 col-md-6 col-sm-12 content__project">
-          <picture>
-            <source media="(max-width:575px)" srcset="img/ex3-360_360w_1x.jpg 1x, img/ex3-640_360w_2x.jpg 2x">
-            <source media="(min-width:576px) and (max-width:767px;)" srcset="img/ex3-640_640w_1x.jpg 1x, img/ex3-960_640w_2x.jpg 2x">
-            <source media="(min-width:768px) and (max-width:1199px)" srcset="img/ex3-960_960w_1x.jpg 1x, img/ex3-1280_960w_2x.jpg 2x">
-            <source media="(min-width:1200px)" srcset="img/ex3-1280_1280w_1x.jpg 1x, img/ex3-1600_1280w_2x.jpg 2x">
-            <img class="img-responsive content__project__img" src="img/ex3-960_640w_2x.jpg" alt="A pair of headphones held up by a hand. Courtesy of Unsplash.">
-          </picture>
-          <h3 class="content__project__title color_2">BOKEH</h3>
-          <p class="content__project__subtitle">
-            <a href="https://github.com/udacity/Bokeh/">https://github.com/udacity/Bokeh/</a>
-          </p>
-        </div>
+        <article id="Project 3">
+          <div class="col-lg-4 col-md-6 col-sm-12 content__project">
+            <picture>
+              <source media="(max-width:575px)" srcset="img/ex3-360_360w_1x.jpg 1x, img/ex3-640_360w_2x.jpg 2x">
+              <source media="(min-width:576px) and (max-width:767px;)" srcset="img/ex3-640_640w_1x.jpg 1x, img/ex3-960_640w_2x.jpg 2x">
+              <source media="(min-width:768px) and (max-width:1199px)" srcset="img/ex3-960_960w_1x.jpg 1x, img/ex3-1280_960w_2x.jpg 2x">
+              <source media="(min-width:1200px)" srcset="img/ex3-1280_1280w_1x.jpg 1x, img/ex3-1600_1280w_2x.jpg 2x">
+              <img class="img-responsive content__project__img" src="img/ex3-960_640w_2x.jpg" alt="A pair of headphones held up by a hand. Courtesy of Unsplash.">
+            </picture>
+            <h3 class="content__project__title color_2">BOKEH</h3>
+            <p class="content__project__subtitle">
+              <a href="https://github.com/udacity/Bokeh/">https://github.com/udacity/Bokeh/</a>
+            </p>
+          </div>
+        </article>
       </row>
   </div>
 </body>
-
 </html>
